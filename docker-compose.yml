@@ -1,26 +1,9 @@
 version: '3.8'
 
 services:
-  db:
-    image: mysql:8.0
-    restart: always
-    environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
-      MYSQL_DATABASE: paoo
-    ports:
-      - "3306:3306"
-    command: --default-authentication-plugin=mysql_native_password
-
   web:
     build: .
-    depends_on:
-      - db
     ports:
       - "80:80"
     volumes:
       - .:/var/www/html
-    environment:
-      DB_HOST: db
-      DB_USER: root
-      DB_PASS: ""
-      DB_NAME: paoo
