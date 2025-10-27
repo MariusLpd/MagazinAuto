@@ -5,12 +5,11 @@ services:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       MYSQL_DATABASE: paoo
     ports:
       - "3306:3306"
-    volumes:
-      - ./db:/docker-entrypoint-initdb.d
+    command: --default-authentication-plugin=mysql_native_password
 
   web:
     build: .
