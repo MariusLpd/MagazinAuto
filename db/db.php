@@ -1,5 +1,5 @@
 <?php
-$host = 'localhost';
+$host = 'db';
 $db   = 'paoo';
 $user = 'root';
 $pass = '';
