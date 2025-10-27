@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'db/db.php'; // conexiune BD
+//require_once 'db/db.php'; // conexiune BD
 
 $eroare = '';
 
