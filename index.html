@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Autentificare - Magazin Auto</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #fff; /* alb */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px 40px;
+            border: 1px solid #000; /* negru */
+            border-radius: 5px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #000;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #000;
+            border-radius: 3px;
+            background-color: #fff;
+            color: #000;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 15px;
+            color: #000;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Autentificare</h2>
+
+        <form method="POST" action="#">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="parola" placeholder="Parolă" required>
+            <button type="submit">Autentificare</button>
+        </form>
+
+        <p>Nu ai cont? <a href="#">Înregistrează-te</a></p>
+    </div>
+</body>
+</html>
