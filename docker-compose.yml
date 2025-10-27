@@ -11,8 +11,8 @@ services:
     image: mysql:8.0
     environment:
       MYSQL_ROOT_PASSWORD: rootpass
-      MYSQL_DATABASE: db344_proiect
-      MYSQL_USER: user
-      MYSQL_PASSWORD: pass
+      MYSQL_DATABASE: paoo
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 
     ports:
       - "3306:3306"
