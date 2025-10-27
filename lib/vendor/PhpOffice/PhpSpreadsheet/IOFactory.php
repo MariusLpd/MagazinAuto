@@ -1,0 +1,1 @@
+<?php namespace PhpOffice\PhpSpreadsheet; class IOFactory {} ?>
